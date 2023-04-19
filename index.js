@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 const uri = "mongodb+srv://maurojuniorpf170:dVegIlPx9npPtxUn@tarefas.fhtcpa9.mongodb.net/?retryWrites=true&w=majority";
-const dbName = 'tarefas';
+const dbName = 'Tarefas';
 
 MongoClient.connect(uri, (err, client) => {
   if (err) {
@@ -14,7 +14,7 @@ MongoClient.connect(uri, (err, client) => {
   }
 
   const db = client.db(dbName);
-  const ColecaoTarefas = db.collection('tarefas');
+  const ColecaoTarefas = db.collection('Tarefas');
 
   app.get('/tarefas', async (req, res) => {
     const tarefas = await ColecaoTarefas.find().toArray();
