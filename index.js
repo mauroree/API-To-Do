@@ -24,7 +24,12 @@ MongoClient.connect(uri, (err, client) => {
   app.post('/tarefas', async (req, res) => {
     const tarefa = {
       nome: req.body.nome,
+      assunto: req.body.assunto,
       notas: req.body.notas,
+      data: req.body.data,
+      horario: req.body.horario,
+    
+
     };
 
     const result = await ColecaoTarefas.insertOne(tarefa);
@@ -43,7 +48,12 @@ MongoClient.connect(uri, (err, client) => {
     }
 
     tarefa.nome = req.body.nome;
+    tarefa.assunto = req.body.assunto;
     tarefa.notas = req.body.notas;
+    tarefa.data = req.body.data;
+    tarefa.horario = req.body.horario;
+   
+
 
     await ColecaoTarefas.updateOne({ _id: ObjectId(tarefaId) }, { $set: tarefa });
 

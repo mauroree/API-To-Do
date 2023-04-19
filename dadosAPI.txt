@@ -1,4 +1,11 @@
-{"nome": "Compras", "assunto": "Pão, leite, café",
-"nome": "Prova ES", "assunto": "Teste de Software",
-"nome": "Trabalho ALGA", "assunto": "Matriz e Sistemas Lineares"}
+{"nome": "Trabalho ALGA", 
+"assunto": "Matriz e Sistemas Lineares", 
+"notas": "Estudar revisão e exercicios", 
+"data": "21/04/23", "horario": "8:00"}
+
+{"nome": "Mercado", 
+"assunto": "Compras", 
+"notas": "Pão, café, leite", 
+"data": "25/04/23", 
+"horario": "18:00"}
 
