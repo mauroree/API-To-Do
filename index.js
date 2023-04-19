@@ -4,17 +4,17 @@ const app = express();
 
 app.use(express.json());
 
-const url = 'mongodb://localhost:27017';
-const dbName = 'tarefas';
+const uri = "mongodb+srv://maurojuniorpf170:dVegIlPx9npPtxUn@tarefas.fhtcpa9.mongodb.net/?retryWrites=true&w=majority";
+const dbName = 'Tarefas';
 
-MongoClient.connect(url, (err, client) => {
+MongoClient.connect(uri, (err, client) => {
   if (err) {
     console.error(err);
     return;
   }
 
   const db = client.db(dbName);
-  const ColecaoTarefas = db.collection('tarefas');
+  const ColecaoTarefas = db.collection('Tarefas');
 
   app.get('/tarefas', async (req, res) => {
     const tarefas = await ColecaoTarefas.find().toArray();
