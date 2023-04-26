@@ -14,7 +14,7 @@ As seguintes rotas estão disponíveis na API:
 
 Retorna uma lista de todos os lembretes armazenados no banco de dados.
 
-**Requisição:** * GET /lembretes
+**Requisição: GET /lembretes** 
 
 **Resposta:**
 
@@ -36,15 +36,12 @@ arquivo.json
 
 ### Adicionar um novo lembrete
 
-**Requisição:**
+**Requisição: POST /lembretes**
 
-* POST /lembretes
-
-
-nome (String, obrigatório): o nome do lembrete; <br>
-assunto (String, obrigatório): o assunto do lembrete; <br>
-notas (String, opcional): notas adicionais para o lembrete; <br>
-dataHora (Date, obrigatório): a data e hora em que o lembrete deve ser realizado. <br>
+    nome (String, obrigatório): o nome do lembrete;
+    assunto (String, obrigatório): o assunto do lembrete;
+    notas (String, opcional): notas adicionais para o lembrete;
+    dataHora (Date, obrigatório): a data e hora em que o lembrete deve ser realizado.
 
 **Exemplo de corpo de requisição:**
 
@@ -55,7 +52,7 @@ arquivo.json
     "notas": "Pão, leite, queijo, café", 
     "dataHora": "2023-05-01T09:00:00.000Z" 
 
-* PUT /lembretes/:id
+**Requisição: PUT /lembretes/:id**
 
 ### Atualiza um lembrete existente. Requer o ID do lembrete a ser atualizado.
 
@@ -68,11 +65,11 @@ arquivo.json
     "notas": "Pão, leite, queijo, café, água, açúcar", 
     "dataHora": "2023-05-01T10:00:00.000Z" 
   
-* DELETE /lembretes/:id
+**Requisição: DELETE /lembretes/:id**
 
 **Deleta um lembrete existente. Requer o ID do lembrete a ser deletado.**
 
-* DELETE /lembretes
+**Requisição: DELETE /lembretes**
 
 **Deleta todos os lembretes existentes.**
 
