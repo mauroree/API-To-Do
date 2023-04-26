@@ -22,27 +22,19 @@ Retorna uma lista de todos os lembretes armazenados no banco de dados.
 
 arquivo.json
 
-[
- {
+    "_id": "607f28fc62c2fc8e8d4620a7",
+    "nome": "Comprar leite", 
+    "assunto": "Compras", 
+    "notas": "Comprar leite no mercado", 
+    "dataHora": "2023-04-26T12:30:00.000Z", 
+    "__v": 0 
   
-  "_id": "607f28fc62c2fc8e8d4620a7", <br>
-    "nome": "Comprar leite", <br>
-    "assunto": "Compras", <br>
-    "notas": "Comprar leite no mercado", <br>
-    "dataHora": "2023-04-26T12:30:00.000Z", <br>
-    "__v": 0 <br>
-  },
- 
- {
-    "_id": "607f28fc62c2fc8e8d4620a8", <br>
-    "nome": "Fazer exercícios", <br>
-    "assunto": "Saúde", <br>
-    "notas": "Fazer exercícios por 30 minutos", <br>
-    "dataHora": "2023-04-26T18:00:00.000Z", <br> 
-    "__v": 0 <br>
-  }
-]
-
+    "_id": "607f28fc62c2fc8e8d4620a8",
+    "nome": "Fazer exercícios", 
+    "assunto": "Saúde", 
+    "notas": "Fazer exercícios por 30 minutos", 
+    "dataHora": "2023-04-26T18:00:00.000Z",  
+    "__v": 0
 
 ### Adicionar um novo lembrete
 
@@ -58,16 +50,12 @@ dataHora (Date, obrigatório): a data e hora em que o lembrete deve ser realizad
 
 **Exemplo de corpo de requisição:**
 
-arquivo.json <br>
+arquivo.json
 
-{
-
-    "nome": "Mercado", <br>
-    "assunto": "Compras", <br>
-    "notas": "Pão, leite, queijo, café", <br>
-    "dataHora": "2023-05-01T09:00:00.000Z" <br>
-   
-}
+    "nome": "Mercado", 
+    "assunto": "Compras", 
+    "notas": "Pão, leite, queijo, café", 
+    "dataHora": "2023-05-01T09:00:00.000Z" 
 
 * PUT /lembretes/:id
 
@@ -75,17 +63,13 @@ arquivo.json <br>
 
 **Exemplo de corpo de requisição:**
 
-arquivo.json <br>
+arquivo.json 
 
-{
-
-    "nome": "Mercado", <br>
-    "assunto": "Compras", <br>
-    "notas": "Pão, leite, queijo, café, água, açúcar", <br>
-    "dataHora": "2023-05-01T10:00:00.000Z"  <br>
+    "nome": "Mercado", 
+    "assunto": "Compras", 
+    "notas": "Pão, leite, queijo, café, água, açúcar", 
+    "dataHora": "2023-05-01T10:00:00.000Z" 
   
-}
-
 * DELETE /lembretes/:id
 
 **Deleta um lembrete existente. Requer o ID do lembrete a ser deletado.**
@@ -93,8 +77,6 @@ arquivo.json <br>
 * DELETE /lembretes
 
 **Deleta todos os lembretes existentes.**
-
-
 
 ## Respostas
 ### As seguintes respostas podem ser enviadas pela API:
