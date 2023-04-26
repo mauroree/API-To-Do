@@ -58,7 +58,7 @@ dataHora (Date, obrigatório): a data e hora em que o lembrete deve ser realizad
 
 **Exemplo de corpo de requisição:**
 
-arquivo.json
+arquivo.json <br>
 {
     "nome": "Mercado", <br>
     "assunto": "Compras", <br>
@@ -72,7 +72,7 @@ arquivo.json
 
 **Exemplo de corpo de requisição:**
 
-arquivo.json
+arquivo.json <br>
 {
     "nome": "Mercado", <br>
     "assunto": "Compras", <br>
