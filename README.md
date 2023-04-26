@@ -62,12 +62,11 @@ arquivo.json <br>
 
 {
 
-<br>
     "nome": "Mercado", <br>
     "assunto": "Compras", <br>
     "notas": "Pão, leite, queijo, café", <br>
     "dataHora": "2023-05-01T09:00:00.000Z" <br>
-    <br>
+   
 }
 
 * PUT /lembretes/:id
@@ -80,12 +79,11 @@ arquivo.json <br>
 
 {
 
-<br>
     "nome": "Mercado", <br>
     "assunto": "Compras", <br>
     "notas": "Pão, leite, queijo, café, água, açúcar", <br>
     "dataHora": "2023-05-01T10:00:00.000Z"  <br>
-    <br>
+  
 }
 
 * DELETE /lembretes/:id
