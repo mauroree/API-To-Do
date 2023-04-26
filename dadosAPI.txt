@@ -1,11 +1,16 @@
-{"nome": "Trabalho ALGA", 
-"assunto": "Matriz e Sistemas Lineares", 
-"notas": "Estudar revisão e exercicios", 
-"data": "21/04/23", "horario": "8:00"}
+{
+    "nome": "Compras",
+    "assunto": "Mercado",
+    "notas": "Pão, leite, queijo, café...",
+    "dataHora": "2023-04-26T19:30:00.000Z",
+}
 
-{"nome": "Mercado", 
-"assunto": "Compras", 
-"notas": "Pão, café, leite", 
-"data": "25/04/23", 
-"horario": "18:00"}
+{
+    "nome": "Trabalho SW",
+    "assunto": "API'S REST",
+    "notas": "Desenvolver uma API com express, node e mongoDB",
+    "dataHora": "2023-05-04T09:45:00.000Z",
+}
+
+
 
