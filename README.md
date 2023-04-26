@@ -1,9 +1,13 @@
 # Documentação API To-Do List
 
 A API de Lembretes é uma aplicação backend que permite aos usuários armazenar, recuperar, atualizar e excluir lembretes. Ele expõe endpoints REST que são consumidos por aplicativos cliente ou serviços de terceiros.
-URL
+
+**URL
+
 O servidor roda em: http://localhost:3000.
-Rotas
+
+##Rotas
+
 As seguintes rotas estão disponíveis na API de Lembretes:
 Listar todos os lembretes
 Retorna uma lista de todos os lembretes armazenados no banco de dados.
