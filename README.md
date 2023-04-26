@@ -1,6 +1,6 @@
 # Documentação API To-Do List
 
-## A API de Lembretes é uma aplicação backend que permite aos usuários armazenar, recuperar, atualizar e excluir lembretes. Ele expõe endpoints REST que são consumidos por aplicativos cliente ou serviços de terceiros.
+## A API de Lembretes é uma aplicação backend que permite aos usuários armazenar, recuperar, atualizar e excluir lembretes.
 
 ### URL:
 
