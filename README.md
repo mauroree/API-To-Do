@@ -8,15 +8,13 @@ O servidor roda em: http://localhost:3000.
 
 ### Rotas:
 
-As seguintes rotas estão disponíveis na API de Lembretes:
+As seguintes rotas estão disponíveis na API:
 
 ### Listar todos os lembretes
 
 Retorna uma lista de todos os lembretes armazenados no banco de dados.
 
-**Requisição:**
-
-* GET /lembretes
+**Requisição:** * GET /lembretes
 
 **Resposta:**
 
