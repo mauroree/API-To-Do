@@ -55,7 +55,7 @@ arquivo.json
 
 **Requisição: PUT /lembretes/:id**
 
-Exemplo de corpo de requisição:
+**Exemplo de corpo de requisição:**
 
 arquivo.json 
 
