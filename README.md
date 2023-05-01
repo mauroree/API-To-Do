@@ -112,7 +112,7 @@ Serviço de banco de dados gerenciado na nuvem permitindo o uso do MongoDB sem a
 
 Biblioteca Node.js que oferece um ORM (Object-Relational Mapping) para o MongoDB. Ele simplifica o acesso ao banco de dados, permitindo definir modelos de dados e consultas de forma mais fácil e intuitiva.
 
-#### Essas tecnologias, se relacionam com: 
+### Essas tecnologias, se relacionam com: 
 
 **Conteúdo Estático:** O Express pode ser utilizado para lidar com conteúdo estático, como por exemplo arquivos HTML, CSS e JS. Já o Mongoose, é usado para interagir com o MongoDB para armazenar os dados da aplicação, juntos, Express e Mongoose permitem criar aplicativos WEB escaláveis que podem ser tanto estáticos quanto renderizados pelo servidor. 
     
