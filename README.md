@@ -99,3 +99,20 @@ O lembrete solicitado não foi encontrado.
 
 O servidor encontrou um erro ao processar a requisição.
 
+## Essa API foi desenvolvida com o uso das seguintes tecnologias: 
+### Express
+
+Framework para Node.js que facilita a criação de aplicativos web e APIs. Ele fornece uma camada de abstração para lidar com rotas, manipulação de solicitações e respostas HTTP, gerenciamento de sessões, entre outras funcionalidades.
+MongoDB Atlas
+Serviço de banco de dados gerenciado na nuvem permitindo o uso do MongoDB sem a necessidade de configurar e gerenciar a infraestrutura do banco de dados. Com o MongoDB Atlas, é possível ter alta disponibilidade, escalabilidade automática, backups regulares e segurança avançada para os dados armazenados no banco de dados.
+
+### Mongoose 
+
+Biblioteca Node.js que oferece um ORM (Object-Relational Mapping) para o MongoDB. Ele simplifica o acesso ao banco de dados, permitindo definir modelos de dados e consultas de forma mais fácil e intuitiva.
+
+#### Essas tecnologias, se relacionam com: 
+	**Conteúdo Estático:** O Express pode ser utilizado para lidar com conteúdo estático, como por exemplo arquivos HTML, CSS e JS. Já o Mongoose, é usado para interagir com o MongoDB para armazenar os dados da aplicação, juntos, Express e Mongoose permitem criar aplicativos WEB escaláveis que podem ser tanto estáticos quanto renderizados pelo servidor. 
+    
+	**Microsserviços:** Express e o Mongoose podem ser usados para criar microsserviços, que são aplicativos independentes que se comunicam por meio de APIs. O Express é usado para criar a camada web do microsserviços, definindo rotas e manipulando solicitações e respostas HTTP. Já o  Mongoose é usado para definir modelos de dados e consultas ao banco de dados MongoDB, que é compartilhado entre os microsserviços, permitindo criar microsserviços escaláveis que compartilham dados em um ambiente distribuído.
+
+
