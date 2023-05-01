@@ -66,11 +66,11 @@ arquivo.json
   
 ### Deletar um lembrete existente. Requer o ID do lembrete a ser deletado.
 
-**Requisição: DELETE /lembretes/:id**
+**Requisição: delete /lembretes/:id**
 
 ### Deletar todos os lembretes existentes.
 
-**Requisição: DELETE /lembretes**
+**Requisição: delete /lembretes**
 
 ## Respostas
 ### As seguintes respostas podem ser enviadas pela API:
@@ -81,7 +81,7 @@ A requisição foi bem sucedida e o resultado é retornado no corpo da resposta.
 
 **201 Created**
 
-O novo recurso foi criado com sucesso.
+Um novo lembrete foi criado com sucesso.
 
 **204 No Content**
 
@@ -93,7 +93,7 @@ A requisição não pôde ser processada devido a um erro no corpo da requisiç�
 
 **404 Not Found**
 
-O recurso solicitado não foi encontrado.
+O lembrete solicitado não foi encontrado.
 
 **500 Internal Server Error**
 
