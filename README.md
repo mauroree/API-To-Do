@@ -75,27 +75,27 @@ arquivo.json
 ## Respostas:
 ### As seguintes respostas podem ser enviadas pela API:
 
-### 200 OK
+#### 200 OK
 
 A requisição foi bem sucedida e o resultado é retornado no corpo da resposta.
 
-**201 Created**
+#### 201 Created
 
 Um novo lembrete foi criado com sucesso.
 
-**204 No Content**
+#### 204 No Content
 
 A requisição foi bem sucedida e não há conteúdo para ser retornado.
 
-**400 Bad Request**
+#### 400 Bad Request
 
 A requisição não pôde ser processada devido a um erro no corpo da requisição ou nos parâmetros da URL.
 
-**404 Not Found**
+#### 404 Not Found
 
 O lembrete solicitado não foi encontrado.
 
-**500 Internal Server Error**
+#### 500 Internal Server Error
 
 O servidor encontrou um erro ao processar a requisição.
 
