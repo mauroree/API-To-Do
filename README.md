@@ -51,12 +51,11 @@ arquivo.json
     "assunto": "Compras", 
     "notas": "Pão, leite, queijo, café", 
     "dataHora": "2023-05-01T09:00:00.000Z" 
+### Atualizar um lembrete existente. Requer o ID do lembrete a ser atualizado.
 
 **Requisição: PUT /lembretes/:id**
 
-### Atualiza um lembrete existente. Requer o ID do lembrete a ser atualizado.
-
-**Exemplo de corpo de requisição:**
+Exemplo de corpo de requisição:
 
 arquivo.json 
 
@@ -65,13 +64,13 @@ arquivo.json
     "notas": "Pão, leite, queijo, café, água, açúcar", 
     "dataHora": "2023-05-01T10:00:00.000Z" 
   
+### Deletar um lembrete existente. Requer o ID do lembrete a ser deletado.
+
 **Requisição: DELETE /lembretes/:id**
 
-**Deleta um lembrete existente. Requer o ID do lembrete a ser deletado.**
+### Deletar todos os lembretes existentes.
 
 **Requisição: DELETE /lembretes**
-
-**Deleta todos os lembretes existentes.**
 
 ## Respostas
 ### As seguintes respostas podem ser enviadas pela API:
