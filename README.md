@@ -72,10 +72,10 @@ arquivo.json
 
 **Requisição: delete /lembretes**
 
-## Respostas
+## Respostas:
 ### As seguintes respostas podem ser enviadas pela API:
 
-**200 OK**
+### 200 OK
 
 A requisição foi bem sucedida e o resultado é retornado no corpo da resposta.
 
