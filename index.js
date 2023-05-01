@@ -9,15 +9,18 @@ app.use(cors());
 app.use(bodyParser.json());
 
 mongoose.connect('mongodb+srv://maurojuniorpf170:dVegIlPx9npPtxUn@tarefas.fhtcpa9.mongodb.net/?retryWrites=true&w=majority', {
+
     useNewUrlParser: true,
     useUnifiedTopology: true
+
 }).then(() => {
-    console.log('Conectado ao MongoDB Atlas');
+    console.log('Conectado ao Banco com sucesso.');
 }).catch((error) => {
     console.log('Erro ao conectar ao Banco: ' + error);
 });
 
 const lembreteSchema = new mongoose.Schema({
+    
     nome: String,
     assunto: String,
     notas: String,
@@ -82,4 +85,5 @@ app.delete('/lembretes', async (req, res) => {
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
 });
+
 
