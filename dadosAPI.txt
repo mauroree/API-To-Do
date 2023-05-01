@@ -8,8 +8,15 @@
 {
     "nome": "Trabalho SW",
     "assunto": "API'S REST",
-    "notas": "Desenvolver uma API com express, node e mongoDB",
+    "notas": "Desenvolver uma API com express, Node e MongoDB",
     "dataHora": "2023-05-04T09:45:00.000Z",
+}
+
+{
+    "nome": "Prova Algebra",
+    "assunto": "Matrizes",
+    "notas": "Estudar matrizes e sistemas lineares",
+    "dataHora": "2023-04-22T08:00:00.000Z",
 }
 
 
