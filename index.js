@@ -34,6 +34,10 @@ const Lembrete = mongoose.model('lembretes', lembreteSchema);
 app.get('/lembretes', async (req, res) => {
     try {
         const lembretes = await Lembrete.find();
+        if (lembretes.length === 0) {
+            res.status(404).send({ error: 'Lembrete não encotrado' });
+            return;
+        }
         res.send(lembretes);
     } catch (error) {
         res.status(500).send(error);
@@ -45,17 +49,18 @@ app.post('/lembretes', async (req, res) => {
     try {
         const lembrete = new Lembrete(req.body);
         await lembrete.save();
-        res.send(lembrete);
+        res.status(201).send(lembrete);
     } catch (error) {
         res.status(500).send(error);
     }
 });
 
+
 // atualiza um lembrete existente
 app.put('/lembretes/:id', async (req, res) => {
     try {
         const lembrete = await Lembrete.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        res.send(lembrete);
+        res.status(200).send({message: "Lembrete atualizado com sucesso."});
     } catch (error) {
         res.status(500).send(error);
     }
@@ -65,7 +70,7 @@ app.put('/lembretes/:id', async (req, res) => {
 app.delete('/lembretes/:id', async (req, res) => {
     try {
         const lembrete = await Lembrete.findByIdAndDelete(req.params.id);
-        res.send(lembrete);
+        res.status(200).send('Lembrete deletado com sucesso.');
     } catch (error) {
         res.status(500).send(error);
     }
@@ -75,7 +80,7 @@ app.delete('/lembretes/:id', async (req, res) => {
 app.delete('/lembretes', async (req, res) => {
     try {
         await Lembrete.deleteMany();
-        res.send('Todos os lembretes foram deletados');
+        send('Todos os lembretes foram deletados');
     } catch (error) {
         res.status(500).send(error);
     }
@@ -85,5 +90,3 @@ app.delete('/lembretes', async (req, res) => {
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
 });
-
-
