@@ -66,11 +66,11 @@ arquivo.json
   
 ### Deletar um lembrete existente. Requer o ID do lembrete a ser deletado.
 
-**Requisição: delete /lembretes/:id**
+**Requisição: DELETE /lembretes/:id**
 
 ### Deletar todos os lembretes existentes.
 
-**Requisição: delete /lembretes**
+**Requisição: DELETE /lembretes**
 
 ## Respostas:
 ### As seguintes respostas podem ser enviadas pela API:
