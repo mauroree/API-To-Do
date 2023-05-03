@@ -80,7 +80,7 @@ app.delete('/lembretes/:id', async (req, res) => {
 app.delete('/lembretes', async (req, res) => {
     try {
         await Lembrete.deleteMany();
-        send('Todos os lembretes foram deletados');
+        res.send('Todos os lembretes foram deletados');
     } catch (error) {
         res.status(500).send(error);
     }
