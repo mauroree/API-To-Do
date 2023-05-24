@@ -24,15 +24,6 @@ mongoose.connect('mongodb+srv://maurojuniorpf170:dVegIlPx9npPtxUn@tarefas.fhtcpa
     console.log('Erro ao conectar ao Banco: ' + error);
 });
 
-const lembreteSchema = new mongoose.Schema({
-
-    nome: String,
-    assunto: String,
-    notas: String,
-    dataHora: Date,
-});
-
-const Lembrete = mongoose.model('lembretes', lembreteSchema);
 
 const userSchema = new mongoose.Schema({
 
@@ -42,6 +33,17 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model('User', userSchema);
+
+
+const lembreteSchema = new mongoose.Schema({
+
+    nome: String,
+    assunto: String,
+    notas: String,
+    dataHora: Date,
+});
+
+const Lembrete = mongoose.model('lembretes', lembreteSchema);
 
 // Configuração para autenticação com JWT
 const secret = 'auth-api-test';
