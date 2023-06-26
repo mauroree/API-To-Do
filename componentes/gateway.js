@@ -63,6 +63,21 @@ const apiIdProxy = createProxyMiddleware('/lembretes/id', {
 
 app.use(apiIdProxy);
 
+// Rota para acessar a API GraphQL
+const graphqlProxy = createProxyMiddleware('/inicio', {
+  target: 'http://localhost:3000',
+  changeOrigin: true,
+  onProxyReq: (proxyReq, req, res) => {
+    const token = req.headers['authorization'];
+    if (!token) {
+      res.status(401).send({ error: 'Acesso não autorizado' });
+    }
+  },
+});
+
+app.use(graphqlProxy);
+
+
 app.listen(port, () => {
   console.log(`Gateway rodando na porta ${port}`);
 });
