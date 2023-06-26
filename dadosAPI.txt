@@ -2,21 +2,21 @@
     "nome": "Compras",
     "assunto": "Mercado",
     "notas": "Pão, leite, queijo, café...",
-    "dataHora": "2023-04-26T19:30:00.000Z",
+    "dataHora": "2023-04-26T19:30:00.000Z"
 }
 
 {
     "nome": "Trabalho SW",
     "assunto": "API'S REST",
     "notas": "Desenvolver uma API com express, Node e MongoDB",
-    "dataHora": "2023-05-04T09:45:00.000Z",
+    "dataHora": "2023-05-04T09:45:00.000Z"
 }
 
 {
     "nome": "Prova Algebra",
     "assunto": "Matrizes",
     "notas": "Estudar matrizes e sistemas lineares",
-    "dataHora": "2023-04-22T08:00:00.000Z",
+    "dataHora": "2023-04-22T08:00:00.000Z"
 }
 
 
