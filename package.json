@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "concurrently \"npm run auth\" \"npm run lembretes\" \"npm run gateway\" \"npm run graphql\"",
-    "graphql": "node componentes/server.js",
+    "graphql": "node componentes/inicio.js",
     "auth": "node componentes/auth.js",
     "lembretes": "node componentes/lembretes.js",
     "gateway": "node componentes/gateway.js"
