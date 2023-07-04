@@ -35,7 +35,7 @@ const lembreteSchema = new mongoose.Schema({
 const Lembrete = mongoose.model('lembretes', lembreteSchema);
 
 
-
+// obtem todos os lembretes do banco
 app.get('/lembretes', async (req, res) => {
     try {
         
@@ -52,6 +52,8 @@ app.get('/lembretes', async (req, res) => {
     }
 });
 
+
+// adiciona um lembrete ao banco
 app.post('/lembretes', async (req, res) => {
     
     try {

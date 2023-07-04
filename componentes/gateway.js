@@ -6,6 +6,7 @@ const app = express();
 const port = 4000;
 app.use(cors());
 
+//Rota para login, redirecionando para a API de autenticação
 const authProxy = createProxyMiddleware('/login', {
 
   target: 'http://localhost:5000',
@@ -15,6 +16,7 @@ const authProxy = createProxyMiddleware('/login', {
 
 app.use(authProxy);
 
+//Rota protegida, redirecioanndo para a API de auteticação
 const authProtegido = createProxyMiddleware('/protegido', {
 
   target: 'http://localhost:5000',
@@ -63,7 +65,7 @@ const apiIdProxy = createProxyMiddleware('/lembretes/id', {
 
 app.use(apiIdProxy);
 
-// Rota para acessar a API GraphQL
+//Rota para acessar a API GraphQL
 const graphqlProxy = createProxyMiddleware('/inicio', {
 
   target: 'http://localhost:3000',

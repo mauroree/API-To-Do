@@ -7,14 +7,17 @@ app.use(express.json());
 
 const port = 5000;
 
+//Gera uma chave aleatória e armazena na variável secretKey
 function generateSecretKey() {
   return crypto.randomBytes(32).toString('hex');
 }
 
 const secretKey = generateSecretKey();
 
+//Pra ver se a chave foi gerada corretamente
 console.log(secretKey);
 
+//Cria um usuário para realizar a autenticação
 const user = {
   
   id: 1,
@@ -23,6 +26,7 @@ const user = {
   loggedIn: false
 
 };
+
 
 app.post('/login', (req, res) => {
   

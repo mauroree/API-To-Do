@@ -8,6 +8,7 @@ const schema = buildSchema(`
   }
 `);
 
+//Rota de boas vindas
 const root = {
   welcomeMessage: () => 'Bem-vindo à To Do List',
 };
